@@ -12,12 +12,14 @@
   "scripts": {
     "test": "mocha --recursive",
     "examples": "open ./examples/index.html",
-    "build": "./node_modules/.bin/babel src --out-dir lib"
+    "build": "babel src --out-dir lib"
   },
   "author": "",
   "license": "ISC",
   "directories": {
-    "example": "examples"
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
   },
   "description": "这是一个测试",
   "keywords": [
