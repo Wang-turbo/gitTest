@@ -1,0 +1,41 @@
+{
+  "name": "zheshiyigetest",
+  "version": "1.0.8",
+  "main": "src/index.js",
+  "files": [
+    "examples",
+    "lib",
+    "src",
+    "test"
+  ],
+  "private": false,
+  "scripts": {
+    "test": "mocha --recursive",
+    "examples": "open ./examples/index.html",
+    "build": "./node_modules/.bin/babel src --out-dir lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "example": "examples"
+  },
+  "description": "这是一个测试",
+  "keywords": [
+    "zhehsiyigetest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lengnuo/gitTest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lengnuo/gitTest/issues"
+  },
+  "homepage": "https://github.com/lengnuo/gitTest#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.4",
+    "mocha": "^5.2.0"
+  }
+}
