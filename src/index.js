@@ -15,6 +15,7 @@
   'use strict';
 
   return function dataType(data) {
-    return ({}).toString.call(data).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+    // [object String] =====> string
+    return ({}).toString.call(data).match(/\s([a-zA-Z]+)/)[1];
   }
 }));
