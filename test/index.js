@@ -14,7 +14,7 @@ describe('基本数据类型', function () {
     expect(dataType(null)).to.equal('null');
   });
   it('string-类型检测测试', () => {
-    expect(dataType('abc')).to.equal('string');
+    expect(dataType('abcdef')).to.equal('string');
   });
   it('boolean-类型检测测试', () => {
     expect(dataType(true)).to.equal('boolean');
@@ -32,7 +32,7 @@ describe('引用数据类型', function () {
     expect(dataType({})).to.equal('object');
   });
   it('function-类型检测测试', () => {
-    expect(dataType(function () {})).to.equal('function');
+    expect(dataType(function () { })).to.equal('function');
   });
 });
 
