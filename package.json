@@ -10,7 +10,7 @@
   ],
   "private": false,
   "scripts": {
-    "test": "mocha --recursive",
+    "test": "jest",
     "examples": "open ./examples/index.html",
     "build": "babel src --out-dir lib",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha"
@@ -43,6 +43,7 @@
     "babel-preset-env": "^1.7.0",
     "chai": "^4.3.4",
     "istanbul": "^0.4.5",
+    "jest": "^27.0.6",
     "mocha": "^5.2.0"
   },
   "dependencies": {

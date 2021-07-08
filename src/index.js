@@ -1,3 +1,4 @@
+// const dataType = {}
 const dataType = (data) =>{
   //如果不是object类型的数据，直接用typeof就能判断出来
   if (typeof data !== 'object') {
@@ -19,4 +20,4 @@ const dataType = (data) =>{
       return 'object'
   }
 }
-export default dataType
+module.exports = dataType;
