@@ -1,10 +1,22 @@
 const dataType = (data) =>{
-  var type = typeof data;
   //如果不是object类型的数据，直接用typeof就能判断出来
-  if (type !== 'object') {
-      return type;
+  if (typeof data !== 'object') {
+    return typeof data // undefined number string boolean symbol function
   }
-  //如果是object类型数据，准确判断类型必须使用Object.prototype.toString.call(obj)的方式才能判断
-  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
+  if (data === null) {
+      return 'null'
+  }
+  if (data instanceof Array) {
+      return 'array'
+  }
+  if (data instanceof Date) {
+      return 'date'
+  }
+  if (data instanceof RegExp) {
+      return 'regexp'
+  }
+  if (data instanceof Object) {
+      return 'object'
+  }
 }
-// export default getType
+export default dataType
