@@ -1,6 +1,6 @@
 const dataType = require('../src/index');
 describe('基本数据类型', function () {
-    // 每个describe块应该包括一个或多个it块，称为测试用例（test case）
+    // 每个describe块应该包括一个或多个test块，称为测试用例（test case）
     test('undefined-类型检测测试', () => {
         expect(dataType(undefined)).toBe('undefined');
     });
