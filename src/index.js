@@ -5,7 +5,6 @@ const getType = (data) =>{
       return type;
   }
   //如果是object类型数据，准确判断类型必须使用Object.prototype.toString.call(obj)的方式才能判断
-  return Object.prototype.toString.call(data).match(/\s([a-zA-Z]+)/)[1];
-  //.replace(/^\[object (\S+)\]$/, '$1');  主要是把  第一个对象去掉
+  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
 }
 export default getType
