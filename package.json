@@ -14,7 +14,8 @@
     "test-mocha": "mocha",
     "build": "babel src --out-dir lib",
     "jest-cov": "jest --coverage",
-    "mocha-cov": "istanbul cover node_modules/mocha/bin/_mocha"
+    "mocha-cov": "istanbul cover node_modules/mocha/bin/_mocha",
+    "check": "istanbul check-coverage"
   },
   "author": "",
   "license": "ISC",
@@ -45,7 +46,8 @@
     "chai": "^4.3.4",
     "istanbul": "^0.4.5",
     "jest": "^27.0.6",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^15.1.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1"
