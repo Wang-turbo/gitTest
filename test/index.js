@@ -22,6 +22,9 @@ describe('基本数据类型', function () {
     it('symbol-类型检测测试', () => {
         expect(dataType(Symbol())).equal('symbol');
     });
+    it('bigint-类型检测测试', () => {
+        expect(dataType(10n)).equal('bigint');
+    });
 });
 
 describe('引用数据类型', function () {

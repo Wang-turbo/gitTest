@@ -3,8 +3,8 @@ SF:D:\code\DetermineDataType\src\index.js
 FNF:0
 FNH:0
 DA:2,1
-DA:4,12
-DA:5,7
+DA:4,13
+DA:5,8
 DA:7,5
 DA:8,1
 DA:10,4
@@ -18,7 +18,7 @@ DA:20,1
 DA:23,1
 LF:14
 LH:14
-BRDA:4,1,0,7
+BRDA:4,1,0,8
 BRDA:4,1,1,5
 BRDA:7,2,0,1
 BRDA:7,2,1,4
