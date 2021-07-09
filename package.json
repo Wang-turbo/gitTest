@@ -10,9 +10,11 @@
   ],
   "private": false,
   "scripts": {
-    "test": "jest",
+    "test-jest": "jest",
+    "test-mocha": "mocha",
     "build": "babel src --out-dir lib",
-    "cover": "jest --coverage"
+    "jest-cov": "jest --coverage",
+    "mocha-cov": "istanbul cover node_modules/mocha/bin/_mocha"
   },
   "author": "",
   "license": "ISC",
